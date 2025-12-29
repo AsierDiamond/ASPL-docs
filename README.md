@@ -11,10 +11,10 @@ All of the Commands must be in Uppercase, except the contents you want it to ope
 Example:
 
 
+```
 COMMAND("content") is valid
-
-
 command("content") is NOT valid
+```
 
 ## Essential Syntax
 

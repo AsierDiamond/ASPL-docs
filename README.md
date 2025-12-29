@@ -41,5 +41,16 @@ There are different ways to render text:
 ```
 PRINT("text") : Prints text.
 SPECIALTEXT("text","x","y","colour (in hex)") : Prints text with more customizable parameters
-SETFONT("dir1/dir2/font.asff") : Chooses a font downloaded in the system for the following text to load, if the font file isnt found, it will                                      switch to Shellfont.asff
+SETFONT("dir1/dir2/font.asff") : Chooses a font downloaded in the system for the following text to load, if the font file isnt found, it will switch to Shellfont.asff
 ```
+## Rendering commands
+Asier System uses the HTML canvas to render everything thats seen in the screen. You can render shapes, icns and png images.
+There are several commands to render elements:
+```
+SQUARE("x","y","width","height","colour (in hex)") : Renders a rectangle with a customized position, colour, and dimensions
+LINE("x1,"y1","x2","y2","width","colour (in hex)") : Renders a line from one point to another, with a custom witdh and colour
+TRI("x1","y1","x2","y2","x3","y3","colour (in hex)") : Renders a triangle with a customized position, colour, and dimensions
+BGCOLOUR("colour (in hex)") : Changes the colour of the background.
+PIXEL("x","y","colour (in hex)") : Renders a single pixel in a customizable position and colour
+IMAGE("x","y","url of image","witdh","height") : Renders an image with a customized position, colour, and dimensions
+ICN("icn code", "size", "x","y") : Renders an icn with a customizable x and y position. ICN  is a vector logo system created by Mistium.

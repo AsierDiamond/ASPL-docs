@@ -147,7 +147,7 @@ There are several system variables:
 ```
 !time-hour! : Returns the time in a HH-MM-SS Format
 !time-date! : Returns the date in a DD-MM-YYYY Format
-!battery! : Returns the battery percentage of the deive
+!battery! : Returns the battery percentage of the device
 !mouse_x! : Returns the x position of the mouse
 !mouse_y! : Returns the y position of the mouse
 !clicked! : Returns a false/true if the mouse is clicked or not

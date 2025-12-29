@@ -9,7 +9,8 @@ ASPL is the official programming language for the Asier System Web OS, the synta
 ## Helpful info:
 All of the Commands must be in Uppercase, except the contents you want it to operate.
 Example:
-\n
+
+
 COMMAND("content") is valid
 command("content") is NOT valid
 

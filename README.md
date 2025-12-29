@@ -54,3 +54,30 @@ BGCOLOUR("colour (in hex)") : Changes the colour of the background.
 PIXEL("x","y","colour (in hex)") : Renders a single pixel in a customizable position and colour
 IMAGE("x","y","url of image","witdh","height") : Renders an image with a customized position, colour, and dimensions
 ICN("icn code", "size", "x","y") : Renders an icn with a customizable x and y position. ICN  is a vector logo system created by Mistium.
+CLEARCANVAS : Clears all of the elements in the canvas, including text, shapes, images, icns...
+```
+## Variables
+There are many commands that implement variables to ASPL
+```
+CREATEVAR("Name") : Creates a variable with a custom name
+SETVAR("Name","Value") : Sets a value to a variable
+ADDVAR("Name","Number to sum") : Sums a number to the already existing variable, if the variable isnt a number, it will return a NaN (Not a number)
+```
+### Showing and Using Variables
+To use a variable, you can use the %Variable Name% in any field of a command, it will be replaced with the variable indicated
+
+For Example:
+```
+START
+CREATEVAR("test")
+SETVAR("test","10")
+PRINT("The value of test is: %test%")
+ADDVAR("test","1")
+PRINT("The value of test is: %test%")
+END
+```
+The output is:
+```
+The value of test is: 10
+The value of test is: 11
+```

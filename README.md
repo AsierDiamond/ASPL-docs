@@ -12,6 +12,8 @@ Example:
 
 
 COMMAND("content") is valid
+
+
 command("content") is NOT valid
 
 ## Essential Syntax
